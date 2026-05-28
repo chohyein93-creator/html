@@ -3,154 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마켓컬리-회원가입</title>
-  <style>
-    h1 { text-align: center; }
-    h1 img { vertical-align: middle;}
-    h1 span { font-size: 18px; font-weight: normal; color: #5F0080 }
-  
-    ul { padding: 0; }
-    li { list-style: none; padding: 10px 20px; }
+  <title>HTML5 + CSS3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="css/basic.css" rel="stylesheet">
+</head>
 
-    #container { 
-      width: 640px; margin: auto;
-      border-top: 0px solid #333 ;
-    }
-    #container span { 
-      display: inline-block;
-      width: 139px; }
-
-    input {
-      width: 300px; height: 40px;
-      border: 1px solid #ddd;
-      outline: none;
-      border-radius: 4px;
-      padding-left: 15px; 
-    }
-    input[type="button"] { width: 100px; padding-left: 0;}
-    input[type="button"]:hover { background: #aaa; color: #fff; }
-    input[type="radio"], input[type="checkbox"] { width: 15px; height: 15px; }
-
-    .short { width: 150px; }
-    button { padding: 10px 40px; background-color: #5F0080; color: #fff; border: none; border-radius: 4px; }
-    button:hover { background: #bd5bdd; }
-  </style>
-  </head>
 <body>
-  <h1>
-    <img src="kurly.svg" alt="마켓컬리 로고">
-    <span>마켓컬리</span>
-  </h1>
-
-  <div id="container">
-    <form action="" method="post">
-      <fieldset>
-        <legend>로그인 정보</legend>
+  <header>
+    <div class="title">
+      <h1>HI Development</h1>
+      <h2>HTML5 + CSS3 Practice</h2>
+    </div>
+    <div id="menus">
+      <nav class="top_menu">
       <ul>
-        <li>
-          <span>아이디*</span>
-          <input type="text" maxlength="10" placeholder="아이디를 입력해주세요" required>
-        </li>
-        <li>
-          <span>비밀번호</span>
-          <input type="password" maxlength="12" placeholder="비밀번호를 입력해주세요">
-        </li>
-        <li>
-          <span>비밀번호확인</span>
-          <input type="password" maxlength="12" placeholder="비밀번호를 한번 더 입력해주세요">
-        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      </fieldset>
+      </nav>
+      <nav class="main_menu">
+      <ul>
+        <li><a href="#">HTML5</a></li>
+        <li><a href="#">CSS3</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">Responsive Site</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+<!----------- header 끝 ----------->
 
-      <form action="" method="post">
-      <fieldset>
-        <legend>가입자정보</legend>
+
+
+<!----------- content 시작 ----------->
+  <div id="content">
+    <section class="main_section">
+      <article class="main_article">
+        <h2>Main article 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget aliquam velit. Morbi eu fringilla risus. Fusce ut lacus ultricies neque tempus finibus at et nunc. Nulla enim enim, pretium id placerat vitae, elementum ac leo. Mauris nec arcu elit. Fusce eget hendrerit risus. Nulla id odio commodo, tempor mi at, commodo leo.<br> Maecenas massa ipsum, ultrices sed leo sit amet, suscipit varius nisi. Proin sed massa eu dui ultricies interdum. Cras non vulputate eros, et volutpat libero. Curabitur sem dui, dapibus id mauris ac, sodales malesuada odio. Nam tempor sit amet velit vulputate hendrerit. Praesent iaculis est ultrices, accumsan quam vehicula, tristique neque. Suspendisse eu odio a sem sollicitudin vulputate. Praesent bibendum congue justo, eget fringilla nisl pharetra eget. Cras ultricies tortor neque, et bibendum nunc suscipit ut.
+        </p>
+      </article>
+      <article class="main_article">
+        <h2>Main article 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget aliquam velit. Morbi eu fringilla risus. Fusce ut lacus ultricies neque tempus finibus at et nunc. Nulla enim enim, pretium id placerat vitae, elementum ac leo. Mauris nec arcu elit. Fusce eget hendrerit risus. Nulla id odio commodo, tempor mi at, commodo leo.
+        </p>
+      </article>
+      <article class="main_article">
+        <h2>Main article 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget aliquam velit. Morbi eu fringilla risus. Fusce ut lacus ultricies neque tempus finibus at et nunc. Nulla enim enim, pretium id placerat vitae, elementum ac leo. Mauris nec arcu elit. Fusce eget hendrerit risus. Nulla id odio commodo, tempor mi at, commodo leo.
+        </p>
+      </article>
+    </section>
+
+    <aside class="main_aside">
+      <input type="radio" name="tab" id="front" checked>
+      <input type="radio" name="tab" id="back">
+      <section class="btns">
+        <label for="front">Front End</label>
+        <label for="back">Back End</label>
+      </section>
+      <div class="tab_item">
         <ul>
           <li>
-            <span>이름*</span>
-            <input type="text" maxlength="5" placeholder="이름을 입력해 주세요" required>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>HTML5</strong>
+              <p>for implementing a webpage's general content and structure.</p>
+            </div>
           </li>
           <li>
-            <span>이메일1</span>
-            <input type="email" placeholder="이메일을 직접 입력해 주세요">
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>CSS3</strong>
+              <p>to create a webpage's colors, style, layout, and fonts.</p>
+            </div>
           </li>
           <li>
-            <span>이메일2</span>
-            <input type="text" class="short">@
-            <select id="select1">
-              <option>---- 선택하기 ----</option>
-              <option value="naver">naver.com</option>
-              <option value="gmail">gmail.com</option>
-              <option value="hanmail">hanmail.net</option>
-              <option value="kakao">kakao.com</option>
-              <option value="etc">직접 입력</option>
-            </select>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>JavaScript</strong>
+              <p>use interactive features like videos, audio, animations, and games.</p>
+            </div>
           </li>
           <li>
-            <span>전화번호</span>
-            <input type="tel" maxlength="12" value="010">
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>React</strong>
+              <p>The library for web and native user interfaces</p>
+            </div>
           </li>
           <li>
-            <span>핸드폰번호</span>
-            <input type="number" maxlength="12" placeholder="숫자만 입력해주세요">
-            <input type="button" value="인증번호 받기">
-          </li>
-          <li>
-            <span>생년월일</span>
-            <input type="date" class="short">
-          </li>
-          <li>
-            <span>홈페이지 주소</span>
-            <input type="url" value="http://">
-          </li>
-          <li>
-            <span>우편번호</span>
-            <input type="search" placeholder="지번/도로명을 입력">
-            <input type="button" value="찾기">
-          </li>
-          <li>
-            <span>성별</span>
-            <input type="radio" name="gender" id="man">
-            <input type="radio" name="gender" id="woman">
-            <input type="radio" name="gender" id="nogender">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label for="man">남자</label> / 
-            <label for="woman">여자</label> / 
-            <label for="nogender">선택안함</label>
-          </li>
-          <li>
-            <span>관심분야</span>
-            <label><input type="checkbox">주식</label>
-            <label><input type="checkbox">부동산</label>
-            <label><input type="checkbox">스포츠</label>
-            <label><input type="checkbox">영화</label>
-            <label><input type="checkbox">음악</label>
-            <label><input type="checkbox">건강</label>
-            <label><input type="checkbox">쇼핑</label>
-          </li>
-          <li>
-            <span>나이대</span>
-            <input type="range" min="10" max="60" id="slider" step="10">
-            <output for="slider"></output>
-          </li>
-          <li>
-            <span>사진업로드</span>
-              <input type="file" style="border: none;">
-          </li>
-          <li>
-            <span style="vertical-align: top;">가입동기</span>
-              <textarea rows="5" cols="50" style="resize:none">가입동기를 자세하게 서술해 주세요</textarea>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>Resonsible Web</strong>
+              <p>need to explain design issues to clients who may not have technical backgrounds.</p>
+            </div>
           </li>
         </ul>
-      </fieldset>
-
-      <div style="text-align: center; padding:20px;"> 
-        <button type="submit">확인</button>
-        <button type="reset">취소</button>
       </div>
-    </form>
-
+      <div class="tab_item">
+        <ul>
+          <li>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>Python</strong>
+              <p>for implementing a webpage's general content and structure.</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>Node.js</strong>
+              <p>to create a webpage's colors, style, layout, and fonts.</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>C++</strong>
+              <p>use interactive features like videos, audio, animations, and games.</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="https://dummyimage.com/45/808080/fff&text=img" alt=""></figure>
+            <div class="text">
+              <strong>Database</strong>
+              <p>The library for web and native user interfaces</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </div>
+<!----------- content 끝 ----------->
+
+  <footer>
+    <h3>HI Development</h3>
+    <address>이 사이트는 html5 + CSS3 연습용 페이지입니다.</address>
+  </footer>
 
 </body>
 </html>
