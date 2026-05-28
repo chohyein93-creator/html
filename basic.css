@@ -1,0 +1,90 @@
+@charset "UTF-8"; /* 영문 2bite 한글 1bite. 아스키 코드, nc코드 - 문자를 표현하는 방법. 그 중 아스키 코드를 많이 사용. 이것은 아스키 코드 */
+
+/* 초기화 */
+* { margin: 0px; padding: 0px; }
+li { list-style: none; }
+a { text-decoration: none; } /* underline 제거 */
+img { border: 0; vertical-align: middle; } /* vertical-align - 이미지들 사이에 여백 생기는걸 막아준다. */
+body { font-family: 'Times New Roman', Times, serif; color: #111; }
+
+
+/******************* 헤더 *******************/
+header { width: 960px; margin: auto; }
+
+header .title { font-family: "Montserrat", sans-serif; }
+.title > h1 { font-size: 40px; }
+.title > h2 { font-size: 20px; font-weight: normal; }
+
+header #menus { margin-top: 20px;
+  overflow: hidden;
+}
+
+header nav > ul {  overflow: hidden; }
+header nav > ul > li { float: left; }
+header nav > ul > li > a { 
+  display: block;
+  color: inherit;
+}
+header nav > ul > li > a:hover { 
+  background: #111; color: #fff; transition: 0.3s; }
+
+.top_menu { float: right; }
+.main_menu { float: left; }
+
+.top_menu a { padding: 2px 5px; font-size: 12px; }
+
+.main_menu a { padding: 10px 20px; border: 1px solid #111; }
+.main_menu li:first-child a { border-radius: 20px 0 0 20px; }
+.main_menu li:last-child a { border-radius: 0 20px 20px 0; }
+
+
+/****************** content *****************/
+#content { width: 960px; margin: 20px auto; overflow: hidden; } /* footer 넣었더니 구조가 붕괴됬는데, 이걸 잡아주기 위해 overflow를 넣음. 근데 이해 안감 */
+#content .main_section { float: left; width: 750px;}
+#content .main_aside { float: right; width: 200px; }
+
+.main_section .main_article { border: 1px solid #111; padding: 20px; margin-bottom: 10px; }
+
+.main_article h2 { }
+.main_article p { color: #5e5e5e; font-size: 14px; }
+
+#main_aside { }
+  input { display: none; }
+  .btns { }
+  .btns > label { float: left; display: block; width: 100px; line-height: 30px; text-align: center; border: 1px solid #111; box-sizing: border-box; cursor: pointer; } /* box-sizing - border 포함된 사이즈. 굉장히 많이 나온다. line-height - 글씨 한 줄이 차지하는 공간이고 y축 가운데로 글씨가 온다. */
+
+  .tab_item { }
+  .tab_item li { border: 1px solid #111; border-top: none; padding: 10px; overflow: hidden;} /* border-top: none - 테두리 두 개 겹친거 없어지고 깔끔해짐 */
+
+  .tab_item figure { float: left; }
+  .tab_item .text { float: right; }
+  .tab_item .text strong { width: 120px;}
+  .tab_item .text p { width: 120px; font-size: 12px;
+    color: #999;
+    line-height: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .tab_item:nth-of-type(2) figure { float: right; }
+  .tab_item:nth-of-type(2) .text { float: left; }
+
+  /* 탭 기능 */
+  input:nth-of-type(1):checked ~ section label:first-child { 
+    background: black; color: white;
+  }
+  input:nth-of-type(2):checked ~ section label:last-child { 
+    background: black; color: white;
+  }
+
+  input ~ div { display: none; }
+  input:nth-of-type(1):checked ~ div:first-of-type { display: block; }
+  input:nth-of-type(2):checked ~ div:last-of-type { display: block; }
+
+  /* 푸터*/
+  footer { width: 960px; margin: auto; border: 1px solid #111; text-align: center; padding: 10px 0; }
+  footer h3 { font-family: "Montserrat", sans-serif; cursive; margin-bottom: 10px; }
+  footer address { font-size: 13px; font-style: normal; } /* font-style: normal - address 때문에 기울어진 글씨를 똑바로 세워준다. */
